@@ -39,6 +39,7 @@ export async function handle(request,env,now=Date.now()) {
   }
   if(u.pathname==='/paddle'&&request.method==='POST') {
     if(!env.PADDLE_WEBHOOK_SECRET||!env.DB||!env.SIGNING_PRIVATE_KEY)return json(503,{error:'BILLING_NOT_CONFIGURED'});
+    if(env.PADDLE_ENV==='live'&&!ready(env))return json(503,{error:'ISSUANCE_DISABLED'});
     // Sandbox can only issue in an explicitly separate sandbox environment/key/DB.
     if(!['live','sandbox'].includes(env.PADDLE_ENV))return json(503,{error:'PADDLE_ENV_REQUIRED'});
     if(Number(request.headers.get('content-length')??0)>1048576)return json(413,{error:'BODY_TOO_LARGE'});
