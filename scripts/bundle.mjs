@@ -1,0 +1,12 @@
+import {mkdir,cp,copyFile,writeFile,readFile} from 'node:fs/promises';
+import {spawnSync} from 'node:child_process';
+import {resolve,dirname,join} from 'node:path';
+const dest=resolve('artifacts/bundle');await mkdir(dest,{recursive:true});
+for(const file of ['README.md','LICENSE','manifest.json'])await copyFile(file,dest+'/'+file);
+await cp('dist',dest+'/dist',{recursive:true});
+const root=JSON.parse(await readFile('package.json','utf8'));
+await writeFile(dest+'/package.json',JSON.stringify({name:root.name,version:root.version,type:'module',private:true,dependencies:root.dependencies},null,2));
+const npm=join(dirname(process.execPath),'node_modules/npm/bin/npm-cli.js');
+const r=spawnSync(process.execPath,[npm,'install','--omit=dev','--ignore-scripts','--no-fund','--no-audit'],{cwd:dest,stdio:'inherit'});
+if(r.status!==0)process.exit(r.status??1);
+console.log('Production-only bundle stage ready: artifacts/bundle. No private files copied.');

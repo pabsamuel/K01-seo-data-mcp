@@ -1,0 +1,8 @@
+{
+  "app":"seo-data-mcp",
+  "name":"SEO Data MCP",
+  "domain":"seo-data.atesensoftware.com",
+  "description":"Local BYOK SEO tools with offline subscription licenses",
+  "plans":[{"id":"starter","name":"Starter","amount":"1200","currency_code":"USD","billing_cycle":{"interval":"month","frequency":1}},{"id":"pro","name":"Pro","amount":"2900","currency_code":"USD","billing_cycle":{"interval":"month","frequency":1}}],
+  "router":{"url":"https://seo-data.atesensoftware.com/paddle","secret_name":"T_SEO_DATA_MCP","app_route":"app:seo-data-mcp"}
+}

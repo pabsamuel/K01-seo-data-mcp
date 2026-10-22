@@ -1,0 +1,23 @@
+{
+  "name": "@pabsamuel/seo-data-mcp",
+  "version": "0.1.0",
+  "description": "Local SEO MCP: Search Console, Bing, IndexNow, PageSpeed and CrUX. Offline licenses; BYOK.",
+  "type": "module",
+  "bin": {"seo-data-mcp": "dist/cli.js"},
+  "files": ["dist", "README.md", "LICENSE", "server.json"],
+  "engines": {"node": ">=22"},
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {"type": "git", "url": "git+https://github.com/pabsamuel/K01-seo-data-mcp.git"},
+  "homepage": "https://seo-data.atesensoftware.com",
+  "mcpName": "io.github.pabsamuel/seo-data-mcp",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test --test-concurrency=1 test/*.test.mjs",
+    "prepack": "npm run build",
+    "check": "tsc --noEmit",
+    "live": "npm run build && node scripts/live.mjs",
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {"@modelcontextprotocol/sdk": "1.32.1", "zod": "4.6.7"},
+  "devDependencies": {"@types/node": "^24.0.0", "typescript": "7.0.2", "wrangler": "^4.0.0"}
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "width": 1440,
+    "path": "/",
+    "status": 200,
+    "overflow": false,
+    "visiblePaidButtons": 0,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "path": "/docs/",
+    "status": 200,
+    "overflow": false,
+    "visiblePaidButtons": 0,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "path": "/privacy/",
+    "status": 200,
+    "overflow": false,
+    "visiblePaidButtons": 0,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "path": "/support/",
+    "status": 200,
+    "overflow": false,
+    "visiblePaidButtons": 0,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "path": "/eula/",
+    "status": 200,
+    "overflow": false,
+    "visiblePaidButtons": 0,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "path": "/refunds/",
+    "status": 200,
+    "overflow": false,
+    "visiblePaidButtons": 0,
+    "errors": []
+  },
+  {
+    "width": 375,
+    "path": "/",
+    "status": 200,
+    "overflow": false,
+    "visiblePaidButtons": 0,
+    "errors": []
+  },
+  {
+    "width": 375,
+    "path": "/docs/",
+    "status": 200,
+    "overflow": false,
+    "visiblePaidButtons": 0,
+    "errors": []
+  },
+  {
+    "width": 375,
+    "path": "/privacy/",
+    "status": 200,
+    "overflow": false,
+    "visiblePaidButtons": 0,
+    "errors": []
+  },
+  {
+    "width": 375,
+    "path": "/support/",
+    "status": 200,
+    "overflow": false,
+    "visiblePaidButtons": 0,
+    "errors": []
+  },
+  {
+    "width": 375,
+    "path": "/eula/",
+    "status": 200,
+    "overflow": false,
+    "visiblePaidButtons": 0,
+    "errors": []
+  },
+  {
+    "width": 375,
+    "path": "/refunds/",
+    "status": 200,
+    "overflow": false,
+    "visiblePaidButtons": 0,
+    "errors": []
+  }
+]

@@ -1,0 +1,9 @@
+node_modules/
+.wrangler/
+dist/
+*.tgz
+.env*
+secrets/
+*.key
+*-private.pem
+artifacts/

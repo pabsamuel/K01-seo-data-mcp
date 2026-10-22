@@ -1,0 +1,22 @@
+{
+  "manifest_version":"0.3",
+  "name":"seo-data-mcp",
+  "display_name":"SEO Data MCP",
+  "version":"0.1.0",
+  "description":"Local BYOK SEO tools with offline paid licenses. Free: three tools and 20 calls/day.",
+  "author":{"name":"Atesen Software","url":"https://atesensoftware.com"},
+  "homepage":"https://seo-data.atesensoftware.com",
+  "documentation":"https://seo-data.atesensoftware.com/docs/",
+  "support":"https://seo-data.atesensoftware.com/support/",
+  "privacy_policies":["https://seo-data.atesensoftware.com/privacy/"],
+  "license":"SEE LICENSE IN LICENSE",
+  "server":{"type":"node","entry_point":"dist/cli.js","mcp_config":{"command":"node","args":["${__dirname}/dist/cli.js"],"env":{"GOOGLE_APPLICATION_CREDENTIALS":"${user_config.google_credentials}","BING_API_KEY":"${user_config.bing_key}","GOOGLE_API_KEY":"${user_config.google_key}","INDEXNOW_KEY":"${user_config.indexnow_key}","SEO_MCP_LICENSE_FILE":"${user_config.license_file}"}}},
+  "compatibility":{"platforms":["win32","darwin","linux"],"runtimes":{"node":">=22"}},
+  "user_config":{
+    "google_credentials":{"type":"file","title":"Google credentials file","description":"Private local service_account or authorized_user JSON path","required":false},
+    "bing_key":{"type":"string","title":"Bing API key","description":"Your Bing Webmaster API key","sensitive":true,"required":false},
+    "google_key":{"type":"string","title":"Google API key","description":"Your PageSpeed/CrUX API key","sensitive":true,"required":false},
+    "indexnow_key":{"type":"string","title":"IndexNow key","description":"Your domain-hosted verification key","sensitive":true,"required":false},
+    "license_file":{"type":"file","title":"Offline license file","description":"Path to your private paid license text file (optional)","required":false}
+  }
+}

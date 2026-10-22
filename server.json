@@ -1,0 +1,8 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pabsamuel/seo-data-mcp",
+  "description": "Local BYOK SEO tools: Search Console, Bing, IndexNow, PageSpeed and CrUX. Offline paid licenses.",
+  "repository": {"url":"https://github.com/pabsamuel/K01-seo-data-mcp","source":"github"},
+  "version": "0.1.0",
+  "packages": [{"registryType":"npm","identifier":"@pabsamuel/seo-data-mcp","version":"0.1.0","transport":{"type":"stdio"},"environmentVariables":[{"name":"GOOGLE_APPLICATION_CREDENTIALS","description":"Absolute path to your local Google service-account or authorized_user JSON","isRequired":false,"isSecret":false},{"name":"BING_API_KEY","description":"Your Bing Webmaster API key","isRequired":false,"isSecret":true},{"name":"GOOGLE_API_KEY","description":"Your Google PageSpeed/CrUX API key","isRequired":false,"isSecret":true},{"name":"INDEXNOW_KEY","description":"Your site-hosted IndexNow key","isRequired":false,"isSecret":true},{"name":"SEO_MCP_LICENSE_FILE","description":"Path to your private offline license file","isRequired":false,"isSecret":false}]}]
+}

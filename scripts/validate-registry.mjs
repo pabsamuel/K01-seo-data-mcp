@@ -1,0 +1,10 @@
+import Ajv from 'ajv';
+import addFormats from 'ajv-formats';
+import {readFile,writeFile} from 'node:fs/promises';
+const doc=JSON.parse(await readFile('server.json','utf8'));
+const schema=await fetch(doc.$schema).then(r=>{if(!r.ok)throw new Error('REGISTRY_SCHEMA_UNAVAILABLE');return r.json();});
+const ajv=new Ajv({allErrors:true,strict:false});addFormats(ajv);
+const valid=ajv.compile(schema);
+if(!valid(doc))throw new Error(JSON.stringify(valid.errors));
+await writeFile('evidence/registry-schema.json',JSON.stringify({schema:doc.$schema,valid:true,date:new Date().toISOString()},null,2)+'\n');
+console.log('REGISTRY_SCHEMA_PASS');

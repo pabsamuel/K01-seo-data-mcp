@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-22T20:02:58.229Z",
+  "report": [
+    {
+      "name": "gsc_query",
+      "status": "blocked",
+      "error": "GOOGLE_CREDENTIALS_MISSING"
+    },
+    {
+      "name": "gsc_sitemaps",
+      "status": "blocked",
+      "error": "GOOGLE_CREDENTIALS_MISSING"
+    },
+    {
+      "name": "gsc_inspect",
+      "status": "blocked",
+      "error": "GOOGLE_CREDENTIALS_MISSING"
+    },
+    {
+      "name": "bing_query_stats",
+      "status": "blocked",
+      "error": "BING_API_KEY_MISSING"
+    },
+    {
+      "name": "bing_crawl_issues",
+      "status": "blocked",
+      "error": "BING_API_KEY_MISSING"
+    },
+    {
+      "name": "pagespeed",
+      "status": "failed",
+      "error": "UPSTREAM_HTTP_429 quota reset=provider-unspecified"
+    },
+    {
+      "name": "crux",
+      "status": "blocked",
+      "error": "GOOGLE_API_KEY_MISSING"
+    },
+    {
+      "name": "indexnow_submit",
+      "status": "blocked",
+      "error": "INDEXNOW_KEY_MISSING_OR_INVALID"
+    }
+  ],
+  "network": [
+    {
+      "host": "www.googleapis.com",
+      "path": "/pagespeedonline/v5/runPagespeed",
+      "status": 429
+    }
+  ]
+}

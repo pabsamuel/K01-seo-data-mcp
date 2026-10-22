@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-22T20:10:49.633Z",
+  "package": "pabsamuel-seo-data-mcp-0.1.0.tgz",
+  "launch": "npm exec (npx equivalent) from clean temporary cwd",
+  "initialize": "pass",
+  "toolCount": 8,
+  "call": "pass; expected missing-credentials error"
+}

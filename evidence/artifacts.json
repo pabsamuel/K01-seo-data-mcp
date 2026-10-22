@@ -1,0 +1,9 @@
+{
+  "tarball_files": 16,
+  "bundle_files": 2377,
+  "archive_safety": "pass",
+  "sha256": {
+    "pabsamuel-seo-data-mcp-0.1.0.tgz": "ab699ee91dc869b4b20b6d3ded5a493d530c58f8fb39aefb888724e65998af96",
+    "seo-data-mcp.mcpb": "b51df9e4c23afa4d8685c8b0ea301f711e9d0766a3d9ca5b1b6ccc693955fd31"
+  }
+}
